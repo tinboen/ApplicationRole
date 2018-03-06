@@ -1,0 +1,24 @@
+<h3>ApplicationRole</h3>
+<p class="Contributor">
+	Department of Beaches and Harbors <br />
+	<a href="mailto:dhoang@bh.lacounty.gov">dhoang@bh.lacounty.gov</a><br />
+	<a href=http://bh.lacounty.gov>http://bh.lacounty.gov</a><br />
+	This extension was created using Don Hoang's Module Development Templates for DNN.
+</p>
+<hr/>
+<div class="License">
+	<h3>About the ApplicationRole</h3>
+	<p class="Owner">
+		<b>Version CHANGEME</b><br /><br />
+	</p>
+	<p>Description about version.</p>
+	
+	<h4>Bug Fixes</h4>
+	<ul>
+			<li>List</li>
+			<li>of</li>
+			<li>bug</li>
+			<li>fixes</li>
+	</ul>
+	
+</div>

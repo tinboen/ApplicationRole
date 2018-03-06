@@ -1,0 +1,148 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="DBH.ApplicationRole" type="Module" version="01.00.00">
+      <friendlyName>DBH Application Role</friendlyName>
+      <description>DBH Application Role module</description>
+      <iconFile>~/images/DBH_Extension.gif</iconFile>
+      <owner>
+        <name>Information Technology Section</name>
+        <organization>Department of Beaches and Harbors</organization>
+        <url>http://bh.lacounty.gov</url>
+        <email>dhoang@bh.lacounty.gov</email>
+      </owner>
+      <license src="License.txt"></license>
+      <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="CoreVersion">07.00.02</dependency>
+      </dependencies>
+
+      <components>
+        <component type="Module">
+          <desktopModule>
+            <moduleName>DBH Application Role</moduleName>
+            <foldername>DBH/ApplicationRole</foldername>
+            <businessControllerClass>DBH.ApplicationRole.Components.FeatureController</businessControllerClass>
+            <supportedFeatures>
+              <supportedFeature>IPortable</supportedFeature>
+              <supportedFeature>ISearchable</supportedFeature>
+              <supportedFeature>IUpgradeable</supportedFeature>
+            </supportedFeatures>
+            <moduleDefinitions>
+              <moduleDefinition>
+                <friendlyName>DBH Application Role</friendlyName>
+                <defaultCacheTime>0</defaultCacheTime>
+                <moduleControls>
+                  <moduleControl>
+                    <controlKey />
+                    <controlSrc>DesktopModules/DBH/ApplicationRole/ViewRole.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle />
+                    <controlType>View</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                  <moduleControl>
+                    <controlKey>EditRole</controlKey>
+                    <controlSrc>DesktopModules/DBH/ApplicationRole/EditRole.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle>Edit Application Role</controlTitle>
+                    <controlType>Edit</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                    <supportsPopUps>True</supportsPopUps>
+                  </moduleControl>
+                  <moduleControl>
+                    <controlKey>UserRoles</controlKey>
+                    <controlSrc>DesktopModules/DBH/ApplicationRole/UserRoles.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle>Edit User Roles</controlTitle>
+                    <controlType>Edit</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                    <supportsPopUps>True</supportsPopUps>
+                  </moduleControl>
+                  <moduleControl>
+                    <controlKey>Settings</controlKey>
+                    <controlSrc>DesktopModules/DBH/ApplicationRole/Settings.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle>Application Role Settings</controlTitle>
+                    <controlType>Edit</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                </moduleControls>
+              </moduleDefinition>
+            </moduleDefinitions>
+          </desktopModule>
+          <eventMessage>
+            <processorType>DotNetNuke.Entities.Modules.EventMessageProcessor, DotNetNuke</processorType>
+            <processorCommand>UpgradeModule</processorCommand>
+            <attributes>
+              <businessControllerClass>DBH.ApplicationRole.Components.FeatureController, ApplicationRole</businessControllerClass>
+              <desktopModuleID>[DESKTOPMODULEID]</desktopModuleID>
+              <upgradeVersionsList>01.00.00</upgradeVersionsList>
+            </attributes>
+          </eventMessage>
+        </component>
+        <component type="Assembly">
+          <assemblies>
+            <assembly>
+              <name>DBH.ApplicationRole.dll</name>
+              <path>bin</path>
+            </assembly>
+          </assemblies>
+        </component>
+        <component type="File">
+          <files>
+            <basePath>DesktopModules\DBH\ApplicationRole</basePath>
+            <file>
+              <path>App_LocalResources</path>
+              <name>EditRole.ascx.resx</name>
+            </file>
+            <file>
+              <path>App_LocalResources</path>
+              <name>Settings.ascx.resx</name>
+            </file>
+            <file>
+              <path>App_LocalResources</path>
+              <name>UserRoles.ascx.resx</name>
+            </file>
+            <file>
+              <path>App_LocalResources</path>
+              <name>ViewRole.ascx.resx</name>
+            </file>
+            <file>
+              <name>EditRole.ascx</name>
+            </file>
+            <file>
+              <name>Settings.ascx</name>
+            </file>
+            <file>
+              <name>UserRoles.ascx</name>
+            </file>
+            <file>
+              <name>ViewRole.ascx</name>
+            </file>
+            <file>
+              <name>ApplicationRole.dnn</name>
+            </file>
+            <file>
+              <name>module.css</name>
+            </file>
+            <file>
+              <name>License.txt</name>
+            </file>
+            <file>
+              <name>ReleaseNotes.txt</name>
+            </file>
+          </files>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
